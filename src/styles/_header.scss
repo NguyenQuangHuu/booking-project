@@ -1,0 +1,28 @@
+@import 'variables';
+.header{
+  height:3rem;
+
+  &__logo{
+    width:3rem;
+  }
+
+  &__link{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  a{
+    display:inline-block;
+    text-transform: capitalize;
+    transition: transform 0.2s ease-in-out;
+    font-size:1.5rem;
+    color:$secondary-color;
+    width: 100%;
+    text-decoration: none;
+    &:hover{
+      transform:scale(1.2);
+
+    }
+  }
+}
