@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../src/styles/buttons.scss";
+@import "../src/styles/cards.scss";
+@import "../src/styles/mixins.scss";
+@import "../src/styles/bases.scss";
+@import "../src/styles/variables.scss";
+@import "../src/styles/header.scss";
+@import "../src/styles/footer.scss";
+
+:root {
+  font-size:16px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Be VietNam Pro,Open Sans', sans-serif;
+}
+
+
+.container{
+  @include flex-wrap;
+  padding:$padding-large;
+
+  .row{
+    flex:1 1 calc(33.33% - #{$padding-large});
+    padding:$padding-small;
+  }
+
+  @media (max-width:$breakpoint-md){
+    flex: 1 1 calc(50% - #{$padding-medium});
+  }
+
+  @media (max-width:$breakpoint-sm){
+    flex:1 1 100%;
+  }
+}
