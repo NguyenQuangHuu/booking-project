@@ -1,0 +1,12 @@
+<div style="text-align: center">
+  <h3>
+    Login Page
+  </h3>
+  <div>
+    <form (ngSubmit)="login()" [formGroup]="loginForm">
+      <input formControlName="username" placeholder="Type a username"/>
+      <input formControlName="password" placeholder="Type your password" type="password"/>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</div>

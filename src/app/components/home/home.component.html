@@ -1,0 +1,29 @@
+<div class="wrapper">
+  <main class="main">
+    @for (post of postItems(); track post.id) {
+      <div class="card">
+        <div class="card__image">
+          <img alt="error.jpg" ngSrc="../../../assets/images/{{post.imageUrl}}" width="80" height="140"/>
+        </div>
+        <div class="card__content">
+          <h4 class="card__content--title">
+            <a routerLink="">{{ post.title }}</a>
+          </h4>
+          <div class="card__content--description">
+            <p class="card__content--description--date">Ngày đăng: {{ post.createdDate  | date:'dd/MM/yyyy' }}</p>
+            <p class="card__content--description--info">Người đăng: {{ post.author }}</p>
+            <p class="card__content--description--views">Lượt xem: {{ post.viewsNumber }}</p>
+          </div>
+        </div>
+      </div>
+    }
+  </main>
+  <div class="related">
+    <h5>
+      Nội dung được yêu thích
+    </h5>
+    <p>
+      nội dung
+    </p>
+  </div>
+</div>
