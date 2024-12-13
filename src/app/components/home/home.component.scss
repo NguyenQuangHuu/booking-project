@@ -1,0 +1,44 @@
+@import "../../../styles/variables";
+
+.wrapper {
+  display: inline-flex;
+  margin-top: 10px;
+}
+
+.main {
+  width: 80%;
+}
+
+.related {
+  width: 20%;
+}
+
+.card {
+  border: 1px solid $secondary-color;
+  min-height: 140px;
+  max-height: 200px;
+  display: flex;
+  border-radius: 20px;
+  margin-right: 10px;
+
+  &__content {
+    width: 65%;
+  }
+
+  &__image {
+    width: 35%;
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 10px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+}
+
+

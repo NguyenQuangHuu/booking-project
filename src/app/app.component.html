@@ -1,37 +1,19 @@
-<header class="header">
-  <div class="logo">
-    <img alt="logo.png" ngSrc="/public/favicon.ico"/>
-  </div>
-  <div class="header__link">
-    <div>
-      <a class="header__text">Trang chủ</a>
-    </div>
-
-    <div>
-      <a class="header__text">Giới thiệu</a>
-    </div>
-
-    <div>
-      <a class="header__text">Điểm đến</a>
-    </div>
-
-    <div>
-      <a class="header__text">Liên hệ</a>
-    </div>
-  </div>
-</header>
-
 <div class="container">
-<!--  card test-->
-  @for(item of card_data; track item.id){
-    <div class="row">
-        <div class="card">
-          <a href="{{item.link}}">{{item.title}}</a>
-          <img alt="error.png" ngSrc="{{item.image_url}}" fill/>
-        </div>
+  <header>
+    <div class="logo">
+      <img alt="logo.png" height="495" src="../assets/images/chinatown.jpg" width="640"/>
     </div>
-  }
+    <hr/>
+    <div class="navigations">
+      <a class="navigations__link" routerLink="/">Trang chủ</a>
+      <a class="navigations__link">Giới thiệu</a>
+      <a class="navigations__link" routerLink="/login">Đăng nhập</a>
+      <a class="navigations__link">Liên hệ</a>
+    </div>
+    <hr/>
+  </header>
+  <router-outlet/>
+  <footer>
+    &copyright HuuNQ contact : nguyenquanghuu2010&#64;gmail.com
+  </footer>
 </div>
-<footer>
-  footer
-</footer>
