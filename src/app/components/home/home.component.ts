@@ -5,15 +5,14 @@ import {RouterLink} from '@angular/router';
 import {DatePipe, NgOptimizedImage} from '@angular/common';
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [
-    RouterLink,
-    DatePipe,
-    NgOptimizedImage
-  ],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+    selector: 'app-home',
+    imports: [
+        RouterLink,
+        DatePipe,
+        NgOptimizedImage
+    ],
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.scss'
 })
 export class HomeComponent {
 
