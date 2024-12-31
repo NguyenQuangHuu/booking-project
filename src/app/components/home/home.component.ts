@@ -13,6 +13,7 @@ import {DatePipe, NgOptimizedImage} from '@angular/common';
     ],
     templateUrl: './home.component.html',
     styleUrl: './home.component.scss'
+
 })
 export class HomeComponent {
 

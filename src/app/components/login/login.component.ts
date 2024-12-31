@@ -6,6 +6,7 @@ import {Router} from '@angular/router';
 import {HttpErrorResponse, HttpEventType, HttpResponse} from '@angular/common/http';
 
 @Component({
+
     selector: 'app-login',
     imports: [
         ReactiveFormsModule
