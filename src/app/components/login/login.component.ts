@@ -1,18 +1,17 @@
 import {Component, OnDestroy} from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, ReactiveFormsModule} from '@angular/forms';
 import {UserService} from '../../services/user.service';
-import {catchError, of, Subscription} from 'rxjs';
+import {Subscription} from 'rxjs';
 import {Router} from '@angular/router';
-import {HttpErrorResponse, HttpEventType, HttpResponse} from '@angular/common/http';
 
 @Component({
+  selector: 'app-login',
+  imports: [
+    ReactiveFormsModule
+  ],
+  templateUrl: './login.component.html',
+  styleUrl: './login.component.scss'
 
-    selector: 'app-login',
-    imports: [
-        ReactiveFormsModule
-    ],
-    templateUrl: './login.component.html',
-    styleUrl: './login.component.scss'
 })
 export class LoginComponent implements OnDestroy {
   loginForm: FormGroup;
