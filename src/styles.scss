@@ -1,10 +1,11 @@
-/* You can add global styles to this file, and also import other styles files */
-
-@use "assets/styles/bases.scss";
-@use "assets/styles/buttons.scss";
-@use "assets/styles/cards.scss";
-@use "assets/styles/header.scss";
-@use "assets/styles/footer.scss";
+/* You can add global styles to this file, and also import other style files */
+@use "../src/styles/mixins.scss" as m;
+@use "../src/styles/bases.scss";
+@use "../src/styles/variables.scss" as v;
+@use "../src/styles/buttons.scss";
+@use "../src/styles/cards.scss";
+@use "../src/styles/header.scss";
+@use "../src/styles/footer.scss";
 
 body {
   font-size: 16px;
@@ -14,4 +15,19 @@ body {
   font-family: 'Be VietNam Pro,Open Sans', sans-serif;
 }
 
+.container {
+  @include m.flex-wrap;
+  padding: v.$padding-large;
 
+  .row {
+    flex: 1 1 calc(33.33% - #{v.$padding-large});
+    padding: v.$padding-small;
+  }
+
+  @media (max-width: v.$breakpoint-md) {
+    flex: 1 1 calc(50% - #{v.$padding-medium});
+  }
+  @media (max-width: v.$breakpoint-sm) {
+    flex: 1 1 100%;
+  }
+}

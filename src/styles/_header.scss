@@ -1,4 +1,4 @@
-@use 'variable' as v;
+@use 'variables' as v;
 
 .header {
   height: 3rem;
@@ -10,7 +10,6 @@
 
 header {
   height: 10rem;
-  width: 100%;
 
   .logo {
     margin: 0 auto;

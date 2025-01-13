@@ -1,4 +1,4 @@
-@use "../../../assets/styles/variable" as v;
+@use "../../../styles/variables" as v;
 
 .wrapper {
   display: inline-flex;
@@ -6,7 +6,7 @@
 }
 
 .main {
-  width: 100%;
+  width: 80%;
 }
 
 .related {

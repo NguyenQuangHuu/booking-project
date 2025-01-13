@@ -1,14 +1,13 @@
-import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
-import { NgOptimizedImage } from '@angular/common';
-import { DestinationStore } from './stores/destination.store';
+import {Component} from '@angular/core';
+import {RouterLink, RouterOutlet} from '@angular/router';
+import {DestinationStore} from './stores/destination.store';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, NgOptimizedImage],
+  imports: [RouterOutlet, RouterLink],
   providers: [DestinationStore],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'Trang chủ';
@@ -31,5 +30,6 @@ export class AppComponent {
       link: '',
       image_url: '../assets/images/chinatown.jpg',
     },
-  ];
+
+  ]
 }
