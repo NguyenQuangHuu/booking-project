@@ -6,13 +6,13 @@ import {Router} from '@angular/router';
 import {HttpErrorResponse, HttpEventType, HttpResponse} from '@angular/common/http';
 
 @Component({
-  selector: 'app-login',
-  standalone: true,
-  imports: [
-    ReactiveFormsModule
-  ],
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.scss'
+
+    selector: 'app-login',
+    imports: [
+        ReactiveFormsModule
+    ],
+    templateUrl: './login.component.html',
+    styleUrl: './login.component.scss'
 })
 export class LoginComponent implements OnDestroy {
   loginForm: FormGroup;

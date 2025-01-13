@@ -1,18 +1,19 @@
 <div style="text-align: center">
-  <h1>WebSocket Chat</h1>
 
-  <div>
+    <h1>WebSocket Chat</h1>
 
-    @for (mes of messages; let i = $index; track i) {
-      <div>{{ mes.receiver }} - {{ mes.message }}</div>
-    }
+    <div>
+
+        @for (mes of messages; let i = $index; track i) {
+            <div>{{ mes }}</div>
+        }
 
 
-  </div>
-  <form (ngSubmit)="sendMessage()" [formGroup]="chatGroup">
-    <input formControlName="username" placeholder="Type a username you want communicate to"/>
-    <input formControlName="message" placeholder="Type a message"/>
-    <button type="submit">Send</button>
-  </form>
-  <button (click)="close()">Close Chatting</button>
+    </div>
+    <form (ngSubmit)="sendMessage()" [formGroup]="chatGroup">
+        <input formControlName="username" placeholder="Type a username you want communicate to"/>
+        <input formControlName="message" placeholder="Type a message"/>
+        <button type="submit">Send</button>
+    </form>
+    <button (click)="close()">Close Chatting</button>
 </div>

@@ -5,13 +5,12 @@ import {Subject} from 'rxjs';
 import {Message} from '../../../models/message.model';
 
 @Component({
-  selector: 'app-chatting',
-  standalone: true,
-  imports: [
-    ReactiveFormsModule
-  ],
-  templateUrl: './chatting.component.html',
-  styleUrl: './chatting.component.scss'
+    selector: 'app-chatting',
+    imports: [
+        ReactiveFormsModule
+    ],
+    templateUrl: './chatting.component.html',
+    styleUrl: './chatting.component.scss'
 })
 export class ChattingComponent implements OnInit {
   chatGroup: FormGroup;

@@ -5,8 +5,7 @@ import {DestinationStore} from './stores/destination.store';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, NgOptimizedImage, RouterLink],
+  imports: [RouterOutlet, RouterLink],
   providers: [DestinationStore],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
