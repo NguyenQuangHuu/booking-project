@@ -1,15 +1,12 @@
-@use "variable" as v;
-
+@import "variables";
 .button {
   display: block;
   width: 30px;
   height: 20px;
-
-  &--primary {
-    background-color: v.$primary-color;
+  &--primary{
+    background-color: $primary-color;
   }
-
-  &__text {
+  &__text{
     font-size: 16px;
     text-transform: uppercase;
   }
