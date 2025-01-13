@@ -1,10 +1,10 @@
-/* You can add global style to this file, and also import other style files */
+/* You can add global styles to this file, and also import other styles files */
 
-@use "style/bases.scss";
-@use "style/buttons.scss";
-@use "style/cards.scss";
-@use "style/header.scss";
-@use "style/footer.scss";
+@use "assets/styles/bases.scss";
+@use "assets/styles/buttons.scss";
+@use "assets/styles/cards.scss";
+@use "assets/styles/header.scss";
+@use "assets/styles/footer.scss";
 
 body {
   font-size: 16px;
