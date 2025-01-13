@@ -1,0 +1,17 @@
+@use "mixins.scss" as m;
+@use "variables.scss" as v;
+
+.container {
+
+  .row {
+    flex: 1 1 calc(33.33% - #{v.$padding-large});
+    padding: v.$padding-small;
+  }
+
+  @media (max-width: v.$breakpoint-md) {
+    flex: 1 1 calc(50% - #{v.$padding-medium});
+  }
+  @media (max-width: v.$breakpoint-sm) {
+    flex: 1 1 100%;
+  }
+}

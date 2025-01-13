@@ -6,13 +6,15 @@
     <hr/>
     <div class="navigations">
       <a class="navigations__link" routerLink="/">Trang chủ</a>
-      <a class="navigations__link">Giới thiệu</a>
+      <a class="navigations__link" routerLink="/dashboard">Dashboard</a>
       <a class="navigations__link" routerLink="/login">Đăng nhập</a>
       <a class="navigations__link">Liên hệ</a>
     </div>
     <hr/>
   </header>
-  <router-outlet/>
+  <div class="container">
+    <router-outlet/>
+  </div>
   <footer>
     &copyright HuuNQ contact : nguyenquanghuu2010&#64;gmail.com
   </footer>
