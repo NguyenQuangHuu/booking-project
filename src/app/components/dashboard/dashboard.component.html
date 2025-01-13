@@ -1,0 +1,14 @@
+<div class="dashboard">
+  <div class="dashboard__action">
+    <button (click)="isActive()" class="dashboard__action--open-modal">New Lesson</button>
+  </div>
+</div>
+@if (openBox()) {
+  <app-popup-form
+    [configForm]="wordForm"
+    [showCancel]="true"
+    [isSubmitting]="isSubmitting()"
+    (submitted)="handleSubmit()"
+    (canceled)="handleCancel()"
+  ></app-popup-form>
+}
